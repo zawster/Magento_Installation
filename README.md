@@ -1,18 +1,22 @@
 # Magento Installations Steps in Ubuntu
 # Step 1: 
 Install apache 2.4
+
 sudo apt-get install apache2
 
 
 # Step 2: 
 Install the PHP extension
+
 sudo apt-get install php7.0-fpm php7.0-mcrypt php7.0-curl php7.0-cli php7.0-mysql php7.0-gd php7.0-xsl php7.0-json php7.0-intl php-pear php7.0-dev php7.0-common php7.0-mbstring php7.0-zip php-soap libcurl3 curl -y
 # If you still have problem in installation of php extentions, read my blog https://exxotics.wordpress.com/2018/09/14/how-to-solve-php-extension-bcmath-is-missing-when-installing-magento-in-ubuntu-16-04/#more-395
 # Step 3: 
 Install phpmyadmin
+
 sudo apt install phpmyadmin
 
-User: root
+User: 
+
 Pass: root
 
 # Step 4: 
