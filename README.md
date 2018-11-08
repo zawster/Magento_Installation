@@ -59,6 +59,7 @@ Run: sudo apt install php libapache2-mod-php
 
     max_execution_time = 1800
     
+    
     max_input_time = 6000
     
     memory_limit = 1024M
@@ -68,6 +69,7 @@ Run: sudo apt install php libapache2-mod-php
     upload_max_filesize = 32M
 
 # Step 8:
+
  a2enmod rewrite apache
  
 - run command:
@@ -77,14 +79,18 @@ Run: sudo apt install php libapache2-mod-php
 - Insert into /etc/apache2/sites-available/000-default.conf:
 
     ＜Directory /var/www/html＞
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Require all granted
+
+     Options Indexes FollowSymLinks
+        
+     AllowOverride All
+        
+     Require all granted
+        
     ＜/ Directory＞
 
 
 Restart apache2
 
 # Step 9: Install magento2
-# If you want to check the steps of Magento installation please read my blog
+ If you want to check the steps of Magento installation please read my blog
 https://exxotics.wordpress.com/2018/09/29/install-and-configure-magento2-in-linux/#more-417
