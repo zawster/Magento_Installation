@@ -57,9 +57,10 @@ Run: sudo apt install php libapache2-mod-php
     
     /etc/php/7.0/apache2/php.ini
 
+ Edit following entries in above files
+ 
     max_execution_time = 1800
-    
-    
+   
     max_input_time = 6000
     
     memory_limit = 1024M
@@ -76,17 +77,17 @@ Run: sudo apt install php libapache2-mod-php
 
         sudo a2enmod rewrite
         
-- Insert into /etc/apache2/sites-available/000-default.conf:
+- Insert into     /etc/apache2/sites-available/000-default.conf:
 
-    ＜Directory /var/www/html＞
+      ＜Directory /var/www/html＞
 
-     Options Indexes FollowSymLinks
+      Options Indexes FollowSymLinks
         
-     AllowOverride All
+      AllowOverride All
         
-     Require all granted
+      Require all granted
         
-    ＜/ Directory＞
+      ＜/ Directory＞
 
 
 Restart apache2
